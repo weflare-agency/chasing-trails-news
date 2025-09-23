@@ -70,6 +70,31 @@ const NewsletterHero = () => {
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-foreground mb-3 font-body">
+                What's your experience level?
+              </label>
+              <div className="grid grid-cols-3 gap-3">
+                <button
+                  type="button"
+                  className="p-3 text-sm font-medium border-2 border-muted rounded-lg hover:border-primary transition-colors text-foreground bg-background"
+                >
+                  Beginner
+                </button>
+                <button
+                  type="button"
+                  className="p-3 text-sm font-medium border-2 border-muted rounded-lg hover:border-primary transition-colors text-foreground bg-background"
+                >
+                  Regular
+                </button>
+                <button
+                  type="button"
+                  className="p-3 text-sm font-medium border-2 border-muted rounded-lg hover:border-primary transition-colors text-foreground bg-background"
+                >
+                  Ultra Veteran
+                </button>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 gap-4">
               <Input
                 type="text"
