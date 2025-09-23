@@ -51,7 +51,7 @@ const NewsletterHero = () => {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-main font-bold mb-6 leading-tight tracking-main uppercase">
           SIGN UP TO OUR FREE<br />
           <span className="text-newsletter">
-            HARRIER TRAIL RUNNING
+            CHASING TRAILS
           </span><br />
           NEWSLETTER
         </h1>
