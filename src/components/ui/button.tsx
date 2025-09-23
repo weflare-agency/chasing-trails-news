@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-hover shadow-soft transition-smooth",
         ghost: "hover:bg-accent hover:text-accent-foreground transition-smooth",
         link: "text-primary underline-offset-4 hover:underline transition-smooth",
-        newsletter: "bg-newsletter-gradient text-newsletter-foreground hover:scale-105 shadow-newsletter transition-bounce font-semibold",
+        newsletter: "bg-newsletter text-newsletter-foreground hover:bg-newsletter-hover shadow-newsletter transition-smooth font-semibold",
         hero: "bg-newsletter text-newsletter-foreground hover:bg-newsletter-hover shadow-medium transition-smooth font-bold text-lg",
       },
       size: {

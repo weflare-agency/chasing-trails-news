@@ -3,8 +3,9 @@ import awardsImage from "@/assets/awards.jpg";
 
 const TrustSignals = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-content-gradient relative">
+      <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'var(--topo-pattern)' }} />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-main font-bold text-foreground mb-6 tracking-main uppercase">
             Trusted by Thousands of Trail Runners
@@ -45,12 +46,23 @@ const TrustSignals = () => {
           <h3 className="text-3xl font-secondary font-bold text-center text-foreground mb-12 tracking-secondary uppercase">
             Industry Recognition
           </h3>
-          <div className="max-w-2xl mx-auto">
-            <img 
-              src={awardsImage} 
-              alt="Harrier Trail Running Awards - Winner Retailer of the Year Outdoors 100 2023, Winner Best Running Accessory Running Show Awards 2022/23" 
-              className="w-full h-auto rounded-lg shadow-medium"
-            />
+          <div className="relative max-w-2xl mx-auto">
+            <div className="absolute inset-0 opacity-10 rounded-lg" style={{ backgroundImage: 'var(--topo-pattern)' }} />
+            <div className="relative bg-card/50 backdrop-blur-sm p-8 rounded-xl border border-border">
+              <img 
+                src={awardsImage} 
+                alt="Harrier Trail Running Awards - Winner Retailer of the Year Outdoors 100 2023, Winner Best Running Accessory Running Show Awards 2022/23" 
+                className="w-full h-auto rounded-lg shadow-soft"
+              />
+              <div className="mt-6 text-center">
+                <p className="text-lg font-secondary font-semibold text-foreground tracking-secondary uppercase mb-2">
+                  Award-Winning Brand
+                </p>
+                <p className="text-muted-foreground font-body tracking-body">
+                  Recognized for excellence in the trail running industry
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

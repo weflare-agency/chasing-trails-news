@@ -45,13 +45,7 @@ const AboutAlecsa = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-xl overflow-hidden shadow-medium border-4 border-white">
-              <img 
-                src={trailRunnerImage} 
-                alt="Trail running in mountain landscapes" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {/* Remove this overlay image since it's now the hero */}
           </div>
         </div>
 

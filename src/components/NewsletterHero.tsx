@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/trail-runner-hero.jpg";
 import harrierLogoWhite from "@/assets/harrier-logo-white.png";
 
 const NewsletterHero = () => {
@@ -33,8 +33,9 @@ const NewsletterHero = () => {
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBackground})` }}
     >
-      {/* Overlay */}
+      {/* Overlay with topographic pattern */}
       <div className="absolute inset-0 bg-hero-gradient" />
+      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'var(--topo-pattern)' }} />
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
