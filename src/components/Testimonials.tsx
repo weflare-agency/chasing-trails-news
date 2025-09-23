@@ -65,14 +65,14 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <div className="bg-newsletter-gradient rounded-2xl p-12 max-w-4xl mx-auto shadow-newsletter">
-            <h3 className="text-3xl md:text-4xl font-secondary font-bold text-newsletter-foreground mb-4 tracking-secondary uppercase">
+          <div className="bg-newsletter/10 rounded-2xl p-12 max-w-4xl mx-auto shadow-newsletter border-2 border-newsletter/30 text-foreground">
+            <h3 className="text-3xl md:text-4xl font-secondary font-bold mb-4 tracking-secondary uppercase">
               Ready to Join the Community?
             </h3>
-            <p className="text-xl text-newsletter-foreground/90 mb-8 font-body tracking-body">
+            <p className="text-xl text-foreground/80 mb-8 font-body tracking-body">
               Get your weekly dose of trail running insights delivered every Thursday
             </p>
-            <Button variant="hero" size="xl" className="text-xl font-main tracking-main uppercase">
+            <Button variant="default" size="xl" className="text-xl font-main tracking-main uppercase">
               Sign me up!
             </Button>
           </div>
