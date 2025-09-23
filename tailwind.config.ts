@@ -65,6 +65,21 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      fontFamily: {
+        'main': ['var(--font-main)'],
+        'secondary': ['var(--font-secondary)'],
+        'subtext': ['var(--font-subtext)'],
+        'body': ['var(--font-body)'],
+        'saira': ['Saira', 'sans-serif'],
+        'comfortaa': ['Comfortaa', 'sans-serif'],
+        'saira-condensed': ['Saira Extra Condensed', 'sans-serif'],
+      },
+      letterSpacing: {
+        'main': 'var(--letter-spacing-main)',
+        'secondary': 'var(--letter-spacing-secondary)',
+        'subtext': 'var(--letter-spacing-subtext)',
+        'body': 'var(--letter-spacing-body)',
+      },
       backgroundImage: {
         'hero-gradient': 'var(--hero-gradient)',
         'content-gradient': 'var(--content-gradient)',

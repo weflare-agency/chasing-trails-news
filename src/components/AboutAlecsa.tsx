@@ -1,41 +1,41 @@
+import { FileText, MapPin, Users } from "lucide-react";
 import alecsaImage from "@/assets/alecsa-stewart.png";
 import trailRunnerImage from "@/assets/trail-runner-hero.jpg";
 
 const AboutAlecsa = () => {
   return (
-    <section className="py-20 bg-content-gradient">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-content-gradient">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-main font-bold text-foreground mb-6 tracking-main uppercase">
             What You'll Get
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            The latest from the trail running world straight to your inbox every week. No sales, no promotions, 
-            just pure trail news, stories, and race updates from someone who lives and breathes the sport.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body tracking-body">
+            Weekly insights into the trail running world, delivered straight to your inbox.
+            Professional journalism meets runner's perspective.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h3 className="text-3xl font-bold text-foreground mb-6">
-              About Alecsa
+            <h3 className="text-2xl font-secondary font-bold text-foreground mb-4 tracking-secondary uppercase">
+              Meet Alecsa Stewart
             </h3>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                Every edition is written by <strong className="text-foreground">Freelance Race Reporter Alecsa Stewart</strong> - 
-                a trail runner, journalist, and content writer living in the French Pyrenees.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-body tracking-body">
+              "I'm a freelance race reporter and journalist living in the French Pyrenees. 
+              As both a trail runner and content writer, I bring you insider perspectives 
+              on the European trail running scene and the athletes who make it so compelling."
+            </p>
+            <blockquote className="border-l-4 border-primary pl-6 py-4 bg-muted rounded-r-lg">
+              <p className="italic text-foreground mb-4 font-body tracking-body">
+                "I write about trail running and outdoor adventures, while also training and racing as a mountain ultra runner myself. 
+                I've been fortunate to experience some amazing events in the UK and abroad and to work closely with some of the top 
+                British and European athletes in our sport."
               </p>
-              <blockquote className="border-l-4 border-secondary pl-6 py-4 bg-muted rounded-r-lg">
-                <p className="italic text-foreground mb-4">
-                  "I write about trail running and outdoor adventures, while also training and racing as a mountain ultra runner myself. 
-                  I've been fortunate to experience some amazing events in the UK and abroad and to work closely with some of the top 
-                  British and European athletes in our sport."
-                </p>
-                <p className="font-semibold text-foreground">
-                  "All this comes through in the newsletter, plus on-the-ground insights wherever possible!"
-                </p>
-              </blockquote>
-            </div>
+              <p className="font-secondary font-semibold text-foreground tracking-secondary">
+                "All this comes through in the newsletter, plus on-the-ground insights wherever possible!"
+              </p>
+            </blockquote>
           </div>
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
@@ -59,37 +59,37 @@ const AboutAlecsa = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-card rounded-xl p-8 shadow-medium border border-border">
             <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-              </svg>
+              <FileText className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h4 className="text-xl font-bold text-foreground mb-3">Professional Journalism</h4>
-            <p className="text-muted-foreground">
-              In-depth race reports and event coverage from a qualified journalist who understands the sport.
+            <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
+              Professional Journalism
+            </h4>
+            <p className="text-muted-foreground leading-relaxed font-body tracking-body">
+              In-depth race reports and athlete interviews from someone who understands both the sport and storytelling.
             </p>
           </div>
 
           <div className="bg-card rounded-xl p-8 shadow-medium border border-border">
             <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6 text-secondary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-              </svg>
+              <MapPin className="w-6 h-6 text-secondary-foreground" />
             </div>
-            <h4 className="text-xl font-bold text-foreground mb-3">European Insights</h4>
-            <p className="text-muted-foreground">
-              Unique perspective from the French Pyrenees, covering UK and European trail running scenes.
+            <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
+              European Insights
+            </h4>
+            <p className="text-muted-foreground leading-relaxed font-body tracking-body">
+              Unique perspectives from the heart of European trail running, covering races and athletes you won't find elsewhere.
             </p>
           </div>
 
           <div className="bg-card rounded-xl p-8 shadow-medium border border-border">
             <div className="w-12 h-12 bg-newsletter rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6 text-newsletter-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+              <Users className="w-6 h-6 text-newsletter-foreground" />
             </div>
-            <h4 className="text-xl font-bold text-foreground mb-3">Runner's Perspective</h4>
-            <p className="text-muted-foreground">
-              Written by an active trail runner who races and trains in the mountains, bringing authentic insights.
+            <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
+              Runner's Perspective
+            </h4>
+            <p className="text-muted-foreground leading-relaxed font-body tracking-body">
+              Content written by a trail runner, for trail runners. I understand the passion because I live it every day.
             </p>
           </div>
         </div>

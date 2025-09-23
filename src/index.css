@@ -2,59 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Trail Running Newsletter Design System - Inspired by mountain landscapes and professional journalism */
+/* Harrier Trail Running Design System - Brand Guidelines Implementation */
 
 @layer base {
   :root {
-    /* Base Colors - Warm earth tones inspired by mountain trails */
-    --background: 0 0% 99%;
-    --foreground: 25 15% 15%;
+    /* Harrier Color Palette from Brand Guidelines */
+    --harrier-dark-teal: 196 73% 18%; /* #0e4649 */
+    --harrier-teal: 195 71% 19%; /* #0f4e5a */
+    --harrier-blue: 195 75% 32%; /* #138e80 */
+    --harrier-dark-grey: 240 2% 19%; /* #303031 */
+    --harrier-sage: 115 21% 64%; /* #4eb2a4 */
+    --harrier-light-grey: 120 6% 76%; /* #c0bec0 */
+    --harrier-yellow: 50 100% 49%; /* #fd9d00 */
 
+    /* Base Theme using Harrier colors */
+    --background: 0 0% 100%;
+    --foreground: var(--harrier-dark-grey);
     --card: 0 0% 100%;
-    --card-foreground: 25 15% 15%;
-
+    --card-foreground: var(--harrier-dark-grey);
     --popover: 0 0% 100%;
-    --popover-foreground: 25 15% 15%;
+    --popover-foreground: var(--harrier-dark-grey);
 
-    /* Primary - Deep forest green inspired by mountain pines */
-    --primary: 145 25% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 145 30% 20%;
+    /* Primary Color System - Harrier Blue */
+    --primary: var(--harrier-blue);
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: var(--harrier-teal);
 
-    /* Secondary - Warm golden hour orange */
-    --secondary: 25 85% 60%;
-    --secondary-foreground: 25 15% 15%;
-    --secondary-hover: 25 85% 55%;
+    /* Secondary Color System - Harrier Sage */
+    --secondary: var(--harrier-sage);
+    --secondary-foreground: var(--harrier-dark-grey);
+    --secondary-hover: 115 21% 70%;
 
-    /* Newsletter accent - Professional blue for credibility */
-    --newsletter: 215 75% 45%;
-    --newsletter-foreground: 0 0% 98%;
-    --newsletter-hover: 215 75% 40%;
+    /* Newsletter Brand Colors - Harrier Yellow */
+    --newsletter: var(--harrier-yellow);
+    --newsletter-foreground: var(--harrier-dark-grey);
+    --newsletter-hover: 50 100% 42%;
 
-    /* Muted earth tones */
-    --muted: 30 15% 94%;
-    --muted-foreground: 25 8% 45%;
+    /* UI Colors using Harrier palette */
+    --muted: 120 6% 96%;
+    --muted-foreground: 120 6% 55%;
+    --accent: var(--harrier-light-grey);
+    --accent-foreground: var(--harrier-dark-grey);
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 120 6% 90%;
+    --input: 120 6% 90%;
+    --ring: var(--harrier-blue);
 
-    --accent: 30 15% 94%;
-    --accent-foreground: 25 15% 15%;
+    /* Harrier Typography System */
+    --font-main: 'Saira', system-ui, sans-serif;
+    --font-secondary: 'Comfortaa', system-ui, sans-serif;
+    --font-subtext: 'Saira Extra Condensed', system-ui, sans-serif;
+    --font-body: 'Comfortaa', system-ui, sans-serif;
+    
+    /* Letter Spacing (from Brand Guidelines) */
+    --letter-spacing-main: 0.15em; /* 150 */
+    --letter-spacing-secondary: 0.15em; /* 150 */
+    --letter-spacing-subtext: 0.2em; /* 200 */
+    --letter-spacing-body: 0.05em; /* 50 */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 145 25% 25%;
-
-    /* Custom design tokens for newsletter theme */
-    --hero-gradient: linear-gradient(135deg, hsl(145 25% 25% / 0.95), hsl(25 85% 60% / 0.85));
-    --content-gradient: linear-gradient(180deg, hsl(0 0% 99%), hsl(30 15% 97%));
-    --newsletter-gradient: linear-gradient(135deg, hsl(215 75% 45%), hsl(145 25% 25%));
+    /* Custom design tokens for Harrier theme */
+    --hero-gradient: linear-gradient(135deg, hsl(var(--harrier-dark-teal) / 0.95), hsl(var(--harrier-blue) / 0.85));
+    --content-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 6% 98%));
+    --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(var(--harrier-blue)));
     
     /* Shadows for depth */
-    --shadow-soft: 0 4px 6px -1px hsl(25 15% 15% / 0.1);
-    --shadow-medium: 0 10px 15px -3px hsl(25 15% 15% / 0.1);
-    --shadow-strong: 0 20px 25px -5px hsl(25 15% 15% / 0.1);
-    --shadow-newsletter: 0 10px 30px -5px hsl(215 75% 45% / 0.3);
+    --shadow-soft: 0 4px 6px -1px hsl(var(--harrier-dark-grey) / 0.1);
+    --shadow-medium: 0 10px 15px -3px hsl(var(--harrier-dark-grey) / 0.1);
+    --shadow-strong: 0 20px 25px -5px hsl(var(--harrier-dark-grey) / 0.1);
+    --shadow-newsletter: 0 10px 30px -5px hsl(var(--harrier-yellow) / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,45 +96,40 @@
   }
 
   .dark {
-    /* Dark mode with mountain night theme */
-    --background: 25 15% 8%;
-    --foreground: 30 15% 94%;
+    /* Dark mode with Harrier theme */
+    --background: var(--harrier-dark-grey);
+    --foreground: var(--harrier-light-grey);
+    --card: 196 73% 20%;
+    --card-foreground: var(--harrier-light-grey);
+    --popover: var(--harrier-dark-teal);
+    --popover-foreground: var(--harrier-light-grey);
 
-    --card: 25 15% 10%;
-    --card-foreground: 30 15% 94%;
+    --primary: var(--harrier-blue);
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: var(--harrier-teal);
 
-    --popover: 25 15% 10%;
-    --popover-foreground: 30 15% 94%;
+    --secondary: var(--harrier-sage);
+    --secondary-foreground: var(--harrier-dark-grey);
+    --secondary-hover: 115 21% 70%;
 
-    --primary: 145 30% 70%;
-    --primary-foreground: 25 15% 8%;
-    --primary-hover: 145 35% 75%;
+    --newsletter: var(--harrier-yellow);
+    --newsletter-foreground: var(--harrier-dark-grey);
+    --newsletter-hover: 50 100% 42%;
 
-    --secondary: 25 75% 65%;
-    --secondary-foreground: 25 15% 8%;
-    --secondary-hover: 25 75% 70%;
+    --muted: var(--harrier-dark-teal);
+    --muted-foreground: var(--harrier-light-grey);
+    --accent: var(--harrier-sage);
+    --accent-foreground: var(--harrier-dark-grey);
+    --destructive: 0 62% 50%;
+    --destructive-foreground: var(--harrier-light-grey);
+    --border: 196 73% 25%;
+    --input: 196 73% 25%;
+    --ring: var(--harrier-blue);
 
-    --newsletter: 215 65% 60%;
-    --newsletter-foreground: 25 15% 8%;
-    --newsletter-hover: 215 65% 65%;
-
-    --muted: 25 10% 15%;
-    --muted-foreground: 30 8% 65%;
-
-    --accent: 25 10% 15%;
-    --accent-foreground: 30 15% 94%;
-
-    --destructive: 0 75% 65%;
-    --destructive-foreground: 25 15% 8%;
-
-    --border: 25 10% 20%;
-    --input: 25 10% 20%;
-    --ring: 145 30% 70%;
-
-    /* Dark mode gradients */
-    --hero-gradient: linear-gradient(135deg, hsl(25 15% 8% / 0.95), hsl(145 25% 15% / 0.9));
-    --content-gradient: linear-gradient(180deg, hsl(25 15% 8%), hsl(25 10% 10%));
-    --newsletter-gradient: linear-gradient(135deg, hsl(215 65% 60%), hsl(145 30% 70%));
+    /* Dark mode gradients with Harrier colors */
+    --hero-gradient: linear-gradient(135deg, hsl(var(--harrier-dark-grey) / 0.95), hsl(var(--harrier-dark-teal) / 0.9));
+    --content-gradient: linear-gradient(180deg, hsl(var(--harrier-dark-grey)), hsl(196 73% 15%));
+    --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(var(--harrier-blue)));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

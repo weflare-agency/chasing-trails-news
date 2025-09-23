@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -24,54 +26,56 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-card">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-main font-bold text-foreground mb-6 tracking-main uppercase">
             What Readers Say
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Join thousands who never miss their weekly trail running insights
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body tracking-body">
+            Join thousands of trail runners who trust our weekly insights
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-card rounded-xl p-8 shadow-medium border border-border hover:shadow-strong transition-smooth">
+            <div key={index} className="bg-background rounded-xl p-8 shadow-medium border border-border hover:shadow-strong transition-smooth">
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-newsletter" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
 
               {/* Quote */}
-              <blockquote className="text-lg text-foreground mb-6 leading-relaxed">
+              <p className="text-lg text-card-foreground mb-6 leading-relaxed italic font-body tracking-body">
                 "{testimonial.quote}"
-              </blockquote>
-
+              </p>
+              
               {/* Author */}
-              <div className="border-t border-border pt-4">
-                <div className="font-semibold text-foreground">{testimonial.name}</div>
-                <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                <div className="text-sm text-muted-foreground">{testimonial.location}</div>
+              <div className="flex flex-col">
+                <span className="font-semibold text-card-foreground font-secondary tracking-secondary">{testimonial.name}</span>
+                <span className="text-sm text-muted-foreground font-subtext tracking-subtext">{testimonial.location}</span>
+                <span className="text-sm text-muted-foreground font-subtext tracking-subtext">{testimonial.role}</span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Call to action */}
-        <div className="mt-16 text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            Ready to join our community of trail running enthusiasts?
-          </p>
-          <a href="#signup" className="inline-block">
-            <button className="bg-newsletter hover:bg-newsletter-hover text-newsletter-foreground font-semibold px-8 py-4 rounded-lg shadow-medium transition-smooth">
-              Get Your Weekly Newsletter
-            </button>
-          </a>
+        <div className="mt-20 text-center">
+          <div className="bg-newsletter-gradient rounded-2xl p-12 max-w-4xl mx-auto shadow-newsletter">
+            <h3 className="text-3xl md:text-4xl font-secondary font-bold text-newsletter-foreground mb-4 tracking-secondary uppercase">
+              Ready to Join the Community?
+            </h3>
+            <p className="text-xl text-newsletter-foreground/90 mb-8 font-body tracking-body">
+              Get your weekly dose of trail running insights delivered every Thursday
+            </p>
+            <Button variant="hero" size="xl" className="text-xl font-main tracking-main uppercase">
+              Sign me up!
+            </Button>
+          </div>
         </div>
       </div>
     </section>
