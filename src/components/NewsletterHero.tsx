@@ -70,6 +70,24 @@ const NewsletterHero = () => {
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-4">
+              <Input
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="h-12 text-lg font-body"
+              />
+              <Input
+                type="email"
+                placeholder="Your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="h-12 text-lg font-body"
+              />
+            </div>
             <div className="mb-6">
               <label className="block text-sm font-medium text-foreground mb-3 font-body">
                 What's your experience level?
@@ -94,24 +112,6 @@ const NewsletterHero = () => {
                   Ultra Veteran
                 </button>
               </div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Input
-                type="text"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="h-12 text-lg font-body"
-              />
-              <Input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="h-12 text-lg font-body"
-              />
             </div>
             <Button 
               type="submit" 
