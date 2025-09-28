@@ -3,7 +3,9 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import heroBackground from "@/assets/trail-runner-hero.jpg";
-import harrierLogoWhite from "@/assets/harrier-logo-white.png";
+import harrierLogo from "@/assets/harrier-main-logo.png";
+import harrierBadge from "@/assets/harrier-badge-logo.png";
+import topoPattern1 from "@/assets/topo-pattern-1.png";
 
 const NewsletterHero = () => {
   const [email, setEmail] = useState("");
@@ -91,18 +93,33 @@ const NewsletterHero = () => {
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBackground})` }}
     >
-      {/* Overlay with topographic pattern */}
+      {/* Overlay with official Harrier topographic pattern */}
       <div className="absolute inset-0 bg-hero-gradient" />
-      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'var(--topo-pattern)' }} />
+      <div 
+        className="absolute inset-0 opacity-15"
+        style={{
+          backgroundImage: `url(${topoPattern1})`,
+          backgroundSize: '400px 400px',
+          backgroundRepeat: 'repeat'
+        }}
+      />
+      
+      {/* Floating badge logos for premium brand feel */}
+      <div className="absolute top-20 right-20 opacity-20 animate-pulse hidden lg:block">
+        <img src={harrierBadge} alt="" className="w-24 h-24" />
+      </div>
+      <div className="absolute bottom-20 left-20 opacity-15 animate-pulse hidden lg:block">
+        <img src={harrierBadge} alt="" className="w-32 h-32 transform rotate-12" />
+      </div>
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        {/* Harrier Logo */}
+        {/* Official Harrier Logo */}
         <div className="mb-8">
           <img 
-            src={harrierLogoWhite} 
+            src={harrierLogo} 
             alt="Harrier Trail Running" 
-            className="h-16 md:h-20 mx-auto"
+            className="h-20 md:h-24 mx-auto filter brightness-0 invert"
           />
         </div>
 

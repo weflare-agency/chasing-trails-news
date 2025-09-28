@@ -1,11 +1,20 @@
 import { FileText, MapPin, Users } from "lucide-react";
 import alecsaImage from "@/assets/alecsa-stewart.png";
-import trailRunnerImage from "@/assets/trail-runner-hero.jpg";
+import topoPattern1 from "@/assets/topo-pattern-1.png";
 
 const AboutAlecsa = () => {
   return (
-    <section className="py-24 bg-content-gradient">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-content-gradient relative overflow-hidden">
+      {/* Subtle official topographic pattern */}
+      <div 
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: `url(${topoPattern1})`,
+          backgroundSize: '250px 250px',
+          backgroundRepeat: 'repeat'
+        }}
+      />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-main font-bold text-foreground mb-6 tracking-main uppercase">
             What You'll Get

@@ -66,8 +66,10 @@
     --content-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 6% 98%));
     --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(50 100% 55%));
     
-    /* Topographic pattern overlay */
-    --topo-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Official Harrier topographic patterns */
+    --topo-pattern-1: url('/src/assets/topo-pattern-1.png');
+    --topo-pattern-2: url('/src/assets/topo-pattern-2.png');
+    --topo-overlay: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
     
     /* Shadows for depth */
     --shadow-soft: 0 4px 6px -1px hsl(var(--harrier-dark-grey) / 0.1);

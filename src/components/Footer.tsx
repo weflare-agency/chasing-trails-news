@@ -1,4 +1,6 @@
 import { Instagram, Facebook, Check, MapPin } from "lucide-react";
+import harrierLogo from "@/assets/harrier-main-logo.png";
+import harrierBadge from "@/assets/harrier-badge-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +9,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-secondary font-bold text-foreground mb-4 tracking-secondary uppercase">Harrier Trail Running</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={harrierBadge} 
+                alt="Harrier Badge" 
+                className="h-8 w-8"
+              />
+              <img 
+                src={harrierLogo} 
+                alt="Harrier Trail Running" 
+                className="h-10 w-auto filter brightness-0 invert"
+              />
+            </div>
             <p className="text-muted-foreground mb-6 leading-relaxed font-body tracking-body">
               Weekly insights into the trail running world from the French Pyrenees and beyond.
             </p>

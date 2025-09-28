@@ -1,10 +1,25 @@
 import { Shield, CheckCircle, Calendar, Heart } from "lucide-react";
 import awardsImage from "@/assets/industry-awards.png";
+import harrierBadge from "@/assets/harrier-badge-logo.png";
+import topoPattern2 from "@/assets/topo-pattern-2.png";
 
 const TrustSignals = () => {
   return (
-    <section className="py-24 bg-content-gradient relative">
-      <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'var(--topo-pattern)' }} />
+    <section className="py-24 bg-content-gradient relative overflow-hidden">
+      {/* Official Harrier topographic pattern */}
+      <div 
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: `url(${topoPattern2})`,
+          backgroundSize: '300px 300px',
+          backgroundRepeat: 'repeat'
+        }}
+      />
+      
+      {/* Decorative badge elements */}
+      <div className="absolute top-10 right-10 opacity-10 hidden lg:block">
+        <img src={harrierBadge} alt="" className="w-20 h-20" />
+      </div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-main font-bold text-foreground mb-6 tracking-main uppercase">
