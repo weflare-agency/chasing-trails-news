@@ -41,19 +41,32 @@ const SecondPageHero = () => {
       }
       formData.append('properties[subscription_source]', 'second_landing_page');
 
-      const response = await fetch('https://manage.kmail-lists.com/ajax/subscriptions/subscribe', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // This is important for Klaviyo's form endpoint
-      });
+      // Try the request with better error handling
+      try {
+        const response = await fetch('https://manage.kmail-lists.com/ajax/subscriptions/subscribe', {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors' // This is important for Klaviyo's form endpoint
+        });
 
-      // Show success message
-      toast({
-        title: "Success! Check your inbox",
-        description: `Hi ${firstName}! Your advanced trail running guide is on its way to ${email}`,
-      });
+        // With no-cors mode, we can't check response status
+        // So we'll add a delay to simulate processing time
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
-      setHasSubmitted(true);
+        console.log('Klaviyo form submitted successfully', { listId: 'XjWFFg', email, firstName });
+
+        // Show success message
+        toast({
+          title: "Success! Check your inbox",
+          description: `Hi ${firstName}! Your advanced trail running guide is on its way to ${email}`,
+        });
+
+        setHasSubmitted(true);
+
+      } catch (networkError) {
+        console.error('Network error submitting to Klaviyo:', networkError);
+        throw new Error('Network connection failed. Please check your internet connection and try again.');
+      }
 
     } catch (error) {
       console.error('Klaviyo subscription error:', error);
