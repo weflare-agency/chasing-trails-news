@@ -4,8 +4,12 @@ import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import heroBackground from "@/assets/trail-runner-hero.jpg";
 import harrierLogoWhite from "@/assets/harrier-logo-white.png";
+import AboutAlecsa from "@/components/AboutAlecsa";
+import Testimonials from "@/components/Testimonials";
+import TrustSignals from "@/components/TrustSignals";
+import Footer from "@/components/Footer";
 
-const NewsletterHero = () => {
+const SecondPageHero = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [runnerLevel, setRunnerLevel] = useState<string>("");
@@ -35,7 +39,7 @@ const NewsletterHero = () => {
       if (runnerLevel) {
         formData.append('properties[runner_level]', runnerLevel);
       }
-      formData.append('properties[subscription_source]', 'main_landing_page');
+      formData.append('properties[subscription_source]', 'second_landing_page');
 
       const response = await fetch('https://manage.kmail-lists.com/ajax/subscriptions/subscribe', {
         method: 'POST',
@@ -46,7 +50,7 @@ const NewsletterHero = () => {
       // Show success message
       toast({
         title: "Success! Check your inbox",
-        description: `Hi ${firstName}! Your guide is on its way to ${email}`,
+        description: `Hi ${firstName}! Your advanced trail running guide is on its way to ${email}`,
       });
 
       setHasSubmitted(true);
@@ -94,24 +98,23 @@ const NewsletterHero = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-main font-bold mb-6 leading-tight tracking-main uppercase">
-          SIGN UP TO OUR FREE<br />
+          UNLOCK YOUR<br />
           <span className="text-newsletter">
-            CHASING TRAILS
+            ULTRA POTENTIAL
           </span><br />
-          NEWSLETTER
+          FREE GUIDE
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed font-body tracking-body">
-          Get weekly insights into the trail running world with race reports,
-          news from the professional scene, and on-the-ground perspectives from
-          the French Pyrenees and beyond.
+          Get your complete guide to advanced trail running techniques, nutrition strategies,
+          and mental preparation. Plus weekly updates from our experts in the French Pyrenees.
         </p>
 
         {/* Newsletter Signup Form */}
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-strong">
-          <h3 className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Get Free Access</h3>
+          <h3 className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Get Your Free Guide</h3>
           <p className="text-muted-foreground mb-6 font-body tracking-body">
-            Drop your name and email below and we'll send the weekly newsletter straight to your inbox.
+            Enter your details below to receive your advanced trail running guide and join our weekly newsletter.
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -180,7 +183,7 @@ const NewsletterHero = () => {
               disabled={isSubmitting}
               className="w-full font-main tracking-main uppercase"
             >
-              {isSubmitting ? "Signing you up..." : "Sign me up!"}
+              {isSubmitting ? "Getting your guide..." : "Get My Free Guide!"}
             </Button>
           </form>
         </div>
@@ -189,4 +192,18 @@ const NewsletterHero = () => {
   );
 };
 
-export default NewsletterHero;
+const SecondPage = () => {
+  return (
+    <div className="min-h-screen">
+      <main>
+        <SecondPageHero />
+        <AboutAlecsa />
+        <Testimonials />
+        <TrustSignals />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default SecondPage;
