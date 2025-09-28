@@ -35,7 +35,7 @@
 
     /* Newsletter Brand Colors - Harrier Yellow */
     --newsletter: var(--harrier-yellow);
-    --newsletter-foreground: 0 0% 100%;
+    --newsletter-foreground: var(--harrier-dark-grey);
     --newsletter-hover: 50 100% 42%;
 
     /* UI Colors using Harrier palette */
@@ -63,8 +63,8 @@
 
     /* Custom design tokens for Harrier theme */
     --hero-gradient: linear-gradient(135deg, hsl(var(--harrier-dark-teal) / 0.8), hsl(var(--harrier-blue) / 0.6));
-    --content-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(var(--harrier-light-grey) / 0.2));
-    --newsletter-gradient: hsl(var(--harrier-yellow));
+    --content-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 6% 98%));
+    --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(50 100% 55%));
     
     /* Topographic pattern overlay */
     --topo-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -132,7 +132,7 @@
     /* Dark mode gradients with Harrier colors */
     --hero-gradient: linear-gradient(135deg, hsl(var(--harrier-dark-grey) / 0.95), hsl(var(--harrier-dark-teal) / 0.9));
     --content-gradient: linear-gradient(180deg, hsl(var(--harrier-dark-grey)), hsl(196 73% 15%));
-    --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(var(--harrier-blue)));
+    --newsletter-gradient: linear-gradient(135deg, hsl(var(--harrier-yellow)), hsl(50 100% 55%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
