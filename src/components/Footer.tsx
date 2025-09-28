@@ -73,13 +73,28 @@ const Footer = () => {
             © 2024 Harrier Trail Running. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext">
+            <a 
+              href="https://harrierrunfree.co.uk/pages/privacy-notice" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext">
+            <a 
+              href="https://harrierrunfree.co.uk/pages/website-terms-of-use" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext"
+            >
               Terms of Service
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext">
+            <a 
+              href="https://harrierrunfree.co.uk/pages/privacy-notice" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary text-sm transition-smooth font-subtext tracking-subtext"
+            >
               Unsubscribe
             </a>
           </div>

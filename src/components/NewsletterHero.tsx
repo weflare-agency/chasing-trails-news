@@ -195,6 +195,19 @@ const NewsletterHero = () => {
             >
               {isSubmitting ? "Signing you up..." : "Sign me up!"}
             </Button>
+            
+            <p className="text-xs text-muted-foreground leading-relaxed mt-4 font-body tracking-body">
+              By clicking "Sign me up!", you consent to receiving our free guide and occasional ultra running tips via email. 
+              You can unsubscribe anytime. We respect your privacy - see our{" "}
+              <a 
+                href="https://harrierrunfree.co.uk/pages/privacy-notice" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-primary transition-smooth"
+              >
+                privacy policy
+              </a>.
+            </p>
           </form>
         </div>
       </div>
