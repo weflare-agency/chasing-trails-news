@@ -33,7 +33,7 @@ const SecondPageHero = () => {
 
       // Use Klaviyo's simple form submission
       const formData = new FormData();
-      formData.append('g', 'WXvgMY'); // EXACT List ID - DO NOT CHANGE
+      formData.append('g', 'XjWFFg'); // EXACT List ID - DO NOT CHANGE
       formData.append('email', email.toLowerCase().trim());
       formData.append('first_name', firstName.trim());
       if (runnerLevel) {
