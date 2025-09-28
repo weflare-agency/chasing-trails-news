@@ -1,5 +1,5 @@
 import { Shield, CheckCircle, Calendar, Heart } from "lucide-react";
-import awardsImage from "@/assets/awards.jpg";
+import awardsImage from "@/assets/industry-awards.png";
 
 const TrustSignals = () => {
   return (
@@ -51,7 +51,7 @@ const TrustSignals = () => {
             <div className="relative bg-card/50 backdrop-blur-sm p-8 rounded-xl border border-border">
               <img 
                 src={awardsImage} 
-                alt="Harrier Trail Running Awards - Winner Retailer of the Year Outdoors 100 2023, Winner Best Running Accessory Running Show Awards 2022/23" 
+                alt="Industry Awards - Women's Running Awards 2023, Outdoors 100 Winner 24/25, Runner's World Highly Commended, The Guardian, Winner Running Show Awards Retailer of the Year 2024" 
                 className="w-full h-auto rounded-lg shadow-soft"
               />
               <div className="mt-6 text-center">
