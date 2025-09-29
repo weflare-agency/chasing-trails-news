@@ -105,11 +105,11 @@ const NewsletterHero = () => {
       />
       
       {/* Floating badge logos for premium brand feel */}
-      <div className="absolute top-20 right-20 opacity-20 animate-pulse hidden lg:block">
-        <img src={harrierBadge} alt="" className="w-24 h-24" />
+      <div className="absolute top-20 right-20 opacity-20 animate-pulse hidden lg:block hover:opacity-30 transition-opacity duration-500">
+        <img src={harrierBadge} alt="" className="w-24 h-24 hover:scale-110 transition-transform duration-500" />
       </div>
-      <div className="absolute bottom-20 left-20 opacity-15 animate-pulse hidden lg:block">
-        <img src={harrierBadge} alt="" className="w-32 h-32 transform rotate-12" />
+      <div className="absolute bottom-20 left-20 opacity-15 animate-pulse hidden lg:block hover:opacity-25 transition-opacity duration-500">
+        <img src={harrierBadge} alt="" className="w-32 h-32 transform rotate-12 hover:scale-110 hover:rotate-6 transition-all duration-500" />
       </div>
       
       {/* Content */}
@@ -138,7 +138,7 @@ const NewsletterHero = () => {
         </p>
 
         {/* Newsletter Signup Form */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-strong">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-strong hover:shadow-newsletter transition-all duration-500 hover:scale-105 border-2 border-transparent hover:border-newsletter/20">
           <h3 className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Get Free Access</h3>
           <p className="text-muted-foreground mb-6 font-body tracking-body">
             Drop your name and email below and we'll send the weekly newsletter straight to your inbox.
@@ -146,22 +146,22 @@ const NewsletterHero = () => {
           
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid md:grid-cols-2 gap-4">
-              <Input
-                type="text"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="h-12 text-lg font-body"
-              />
-              <Input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="h-12 text-lg font-body"
-              />
+                <Input
+                  type="text"
+                  placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="h-12 text-lg font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
+                />
+                <Input
+                  type="email"
+                  placeholder="Your email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="h-12 text-lg font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
+                />
             </div>
             <div className="mb-6">
               <label className="block text-sm font-medium text-foreground mb-3 font-body">
@@ -171,10 +171,10 @@ const NewsletterHero = () => {
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Beginner")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-colors ${
+                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Beginner" 
-                      ? "border-primary bg-primary/10 text-primary" 
-                      : "border-muted hover:border-primary text-foreground bg-background"
+                      ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                      : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
                   }`}
                 >
                   Beginner
@@ -182,10 +182,10 @@ const NewsletterHero = () => {
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Regular")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-colors ${
+                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Regular" 
-                      ? "border-primary bg-primary/10 text-primary" 
-                      : "border-muted hover:border-primary text-foreground bg-background"
+                      ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                      : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
                   }`}
                 >
                   Regular
@@ -193,10 +193,10 @@ const NewsletterHero = () => {
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Ultra Veteran")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-colors ${
+                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Ultra Veteran" 
-                      ? "border-primary bg-primary/10 text-primary" 
-                      : "border-muted hover:border-primary text-foreground bg-background"
+                      ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                      : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
                   }`}
                 >
                   Ultra Veteran

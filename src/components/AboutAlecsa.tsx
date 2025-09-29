@@ -27,8 +27,8 @@ const AboutAlecsa = () => {
 
         {/* Newsletter Features */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-primary/20">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:scale-105 group">
+            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <FileText className="w-6 h-6 text-primary-foreground" />
             </div>
             <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
@@ -39,8 +39,8 @@ const AboutAlecsa = () => {
             </p>
           </div>
 
-          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-secondary/20">
-            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:scale-105 group">
+            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <MapPin className="w-6 h-6 text-secondary-foreground" />
             </div>
             <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
@@ -51,8 +51,8 @@ const AboutAlecsa = () => {
             </p>
           </div>
 
-          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-newsletter/20">
-            <div className="w-12 h-12 bg-newsletter rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-background/80 backdrop-blur-sm rounded-xl p-8 shadow-strong border-2 border-newsletter/20 hover:border-newsletter/40 transition-all duration-300 hover:shadow-lg hover:scale-105 group">
+            <div className="w-12 h-12 bg-newsletter rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <Users className="w-6 h-6 text-newsletter-foreground" />
             </div>
             <h4 className="text-xl font-secondary font-semibold text-foreground mb-3 tracking-secondary uppercase">
@@ -86,11 +86,11 @@ const AboutAlecsa = () => {
             </blockquote>
           </div>
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong">
+            <div className="relative rounded-2xl overflow-hidden shadow-strong hover:shadow-xl transition-all duration-500 hover:scale-105">
               <img 
                 src={alecsaImage} 
                 alt="Alecsa Stewart - Freelance Race Reporter and Trail Runner in the French Pyrenees" 
-                className="w-full h-auto"
+                className="w-full h-auto transition-transform duration-700 hover:scale-110"
               />
             </div>
           </div>

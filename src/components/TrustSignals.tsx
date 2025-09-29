@@ -27,27 +27,27 @@ const TrustSignals = () => {
 
         {/* Stats */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">30,000+</div>
-            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">WEEKLY READERS</div>
+          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">30,000+</div>
+            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase group-hover:text-white transition-colors duration-300">WEEKLY READERS</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Active readers worldwide</div>
           </div>
 
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">87%</div>
-            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">Open Rate</div>
+          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">87%</div>
+            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase group-hover:text-white transition-colors duration-300">Open Rate</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Above industry average</div>
           </div>
 
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">156</div>
-            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">Weeks Delivered</div>
+          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">156</div>
+            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase group-hover:text-white transition-colors duration-300">Weeks Delivered</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">3+ years of consistency</div>
           </div>
 
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">47</div>
-            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">Countries</div>
+          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">47</div>
+            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase group-hover:text-white transition-colors duration-300">Countries</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Global trail running community</div>
           </div>
         </div>
@@ -79,26 +79,26 @@ const TrustSignals = () => {
             Our Promise to You
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="flex flex-col items-center text-center p-6">
-              <Shield className="w-8 h-8 text-primary mb-3" />
+            <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 hover:scale-105 group">
+              <Shield className="w-8 h-8 text-primary mb-3 group-hover:scale-110 transition-transform duration-300" />
               <h4 className="font-secondary font-semibold text-foreground mb-2 tracking-secondary uppercase">SSL Secure</h4>
               <p className="text-sm text-muted-foreground font-subtext tracking-subtext">Your data is protected</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <CheckCircle className="w-8 h-8 text-secondary mb-3" />
+            <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-secondary/40 hover:bg-secondary/5 transition-all duration-300 hover:scale-105 group">
+              <CheckCircle className="w-8 h-8 text-secondary mb-3 group-hover:scale-110 transition-transform duration-300" />
               <h4 className="font-secondary font-semibold text-foreground mb-2 tracking-secondary uppercase">No Spam Promise</h4>
               <p className="text-sm text-muted-foreground font-subtext tracking-subtext">Quality over quantity</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <Calendar className="w-8 h-8 text-newsletter mb-3" />
+            <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-newsletter/40 hover:bg-newsletter/5 transition-all duration-300 hover:scale-105 group">
+              <Calendar className="w-8 h-8 text-newsletter mb-3 group-hover:scale-110 transition-transform duration-300" />
               <h4 className="font-secondary font-semibold text-foreground mb-2 tracking-secondary uppercase">Weekly Delivery</h4>
               <p className="text-sm text-muted-foreground font-subtext tracking-subtext">Every Thursday</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <Heart className="w-8 h-8 text-primary mb-3" />
+            <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 hover:scale-105 group">
+              <Heart className="w-8 h-8 text-primary mb-3 group-hover:scale-110 transition-transform duration-300" />
               <h4 className="font-secondary font-semibold text-foreground mb-2 tracking-secondary uppercase">Unsubscribe Anytime</h4>
               <p className="text-sm text-muted-foreground font-subtext tracking-subtext">No questions asked</p>
             </div>
