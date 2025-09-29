@@ -2,19 +2,14 @@ import { Shield, CheckCircle, Calendar, Heart } from "lucide-react";
 import awardsImage from "@/assets/industry-awards.png";
 import harrierBadge from "@/assets/harrier-badge-logo.png";
 import topoPattern2 from "@/assets/topo-pattern-2.png";
-
 const TrustSignals = () => {
-  return (
-    <section className="py-24 bg-content-gradient relative overflow-hidden">
+  return <section className="py-24 bg-content-gradient relative overflow-hidden">
       {/* Official Harrier topographic pattern */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url(${topoPattern2})`,
-          backgroundSize: '300px 300px',
-          backgroundRepeat: 'repeat'
-        }}
-      />
+      <div className="absolute inset-0 opacity-5" style={{
+      backgroundImage: `url(${topoPattern2})`,
+      backgroundSize: '300px 300px',
+      backgroundRepeat: 'repeat'
+    }} />
       
       {/* Decorative badge elements */}
       <div className="absolute top-10 right-10 opacity-10 hidden lg:block">
@@ -33,8 +28,8 @@ const TrustSignals = () => {
         {/* Stats */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">2,500+</div>
-            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">Weekly Subscribers</div>
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main">30,000+</div>
+            <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase">WEEKLY READERS</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Active readers worldwide</div>
           </div>
 
@@ -62,13 +57,11 @@ const TrustSignals = () => {
             Industry Recognition
           </h3>
           <div className="relative max-w-2xl mx-auto">
-            <div className="absolute inset-0 opacity-10 rounded-lg" style={{ backgroundImage: 'var(--topo-pattern)' }} />
+            <div className="absolute inset-0 opacity-10 rounded-lg" style={{
+            backgroundImage: 'var(--topo-pattern)'
+          }} />
             <div className="relative bg-card/50 backdrop-blur-sm p-8 rounded-xl border border-border">
-              <img 
-                src={awardsImage} 
-                alt="Industry Awards - Women's Running Awards 2023, Outdoors 100 Winner 24/25, Runner's World Highly Commended, The Guardian, Winner Running Show Awards Retailer of the Year 2024" 
-                className="w-full h-auto rounded-lg shadow-soft"
-              />
+              <img src={awardsImage} alt="Industry Awards - Women's Running Awards 2023, Outdoors 100 Winner 24/25, Runner's World Highly Commended, The Guardian, Winner Running Show Awards Retailer of the Year 2024" className="w-full h-auto rounded-lg shadow-soft" />
               <div className="mt-6 text-center">
                 <p className="text-lg font-secondary font-semibold text-foreground tracking-secondary uppercase mb-2">
                   Award-Winning Brand
@@ -112,8 +105,6 @@ const TrustSignals = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TrustSignals;
