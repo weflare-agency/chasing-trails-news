@@ -138,7 +138,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Community Text */}
             <div className="text-center md:text-left">
-              <h3 className="text-newsletter font-secondary font-black text-2xl lg:text-3xl tracking-secondary uppercase">
+              <h3 className="text-newsletter font-secondary font-black text-2xl lg:text-3xl tracking-secondary uppercase" style={{ fontWeight: '950', textShadow: '1px 1px 0px currentColor' }}>
                 JOIN OUR TRAIL COMMUNITY
               </h3>
             </div>
