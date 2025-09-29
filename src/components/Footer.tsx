@@ -134,43 +134,41 @@ const Footer = () => {
         </div>
 
         {/* JOIN OUR TRAIL COMMUNITY Section */}
-        <div className="bg-newsletter py-8 -mx-6 lg:-mx-8 mb-8">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-              {/* Community Text */}
-              <div className="text-center md:text-left">
-                <h3 className="text-primary font-secondary font-black text-2xl lg:text-3xl tracking-secondary uppercase">
-                  JOIN OUR TRAIL COMMUNITY
-                </h3>
-              </div>
-              
-              {/* Social Icons */}
-              <div className="flex items-center space-x-6">
-                <a 
-                  href="https://www.instagram.com/harrier_trail_running/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 transition-all duration-300 group"
-                >
-                  <Instagram className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a 
-                  href="https://www.facebook.com/harriertrailrunning" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 transition-all duration-300 group"
-                >
-                  <Facebook className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/harrier-trail-running" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 transition-all duration-300 group"
-                >
-                  <Linkedin className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
-                </a>
-              </div>
+        <div className="py-8 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Community Text */}
+            <div className="text-center md:text-left">
+              <h3 className="text-newsletter font-secondary font-black text-2xl lg:text-3xl tracking-secondary uppercase">
+                JOIN OUR TRAIL COMMUNITY
+              </h3>
+            </div>
+            
+            {/* Social Icons */}
+            <div className="flex items-center space-x-6">
+              <a 
+                href="https://www.instagram.com/harrier_trail_running/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-newsletter transition-all duration-300 group"
+              >
+                <Instagram className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a 
+                href="https://www.facebook.com/harriertrailrunning" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-newsletter transition-all duration-300 group"
+              >
+                <Facebook className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/harrier-trail-running" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-newsletter transition-all duration-300 group"
+              >
+                <Linkedin className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
+              </a>
             </div>
           </div>
         </div>
