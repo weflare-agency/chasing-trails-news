@@ -18,7 +18,7 @@ const Footer = () => {
                 />
                 <span className="text-xl font-secondary font-bold tracking-secondary">HARRIER</span>
               </div>
-              <p className="text-muted-foreground leading-relaxed font-body tracking-body text-sm">
+              <p className="text-white leading-relaxed font-body tracking-body text-sm">
                 The UK's fastest growing newsletter for trail runners. Weekly insights from the French Pyrenees and European racing scene.
               </p>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Main Website
                     <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -41,7 +41,7 @@ const Footer = () => {
                 <li>
                   <a 
                     href="#newsletter" 
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300"
                   >
                     Newsletter Signup
                   </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li>
                   <a 
                     href="#about" 
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300"
                   >
                     About Alecsa
                   </a>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <li>
                   <a 
                     href="#testimonials" 
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300"
                   >
                     Testimonials
                   </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/privacy-notice" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Privacy Policy
                     <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -85,7 +85,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/website-terms-of-use" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Terms of Service
                     <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -96,7 +96,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/privacy-notice" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-white text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Unsubscribe
                     <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -113,7 +113,7 @@ const Footer = () => {
                   href="https://www.instagram.com/harrier_trail_running/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-newsletter transition-all duration-300 group"
+                  className="flex items-center gap-3 text-white hover:text-newsletter transition-all duration-300 group"
                 >
                   <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                   <span className="text-sm font-body tracking-body">Instagram</span>
@@ -122,14 +122,14 @@ const Footer = () => {
                   href="https://www.facebook.com/harriertrailrunning" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-newsletter transition-all duration-300 group"
+                  className="flex items-center gap-3 text-white hover:text-newsletter transition-all duration-300 group"
                 >
                   <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                   <span className="text-sm font-body tracking-body">Facebook</span>
                 </a>
                 <a 
                   href="#linkedin" 
-                  className="flex items-center gap-3 text-muted-foreground hover:text-newsletter transition-all duration-300 group"
+                  className="flex items-center gap-3 text-white hover:text-newsletter transition-all duration-300 group"
                 >
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                   <span className="text-sm font-body tracking-body">LinkedIn</span>
@@ -145,7 +145,7 @@ const Footer = () => {
             <h3 className="text-2xl font-secondary font-bold text-newsletter mb-4 tracking-secondary">
               JOIN OUR TRAIL COMMUNITY
             </h3>
-            <p className="text-muted-foreground font-body tracking-body mb-6 max-w-2xl mx-auto">
+            <p className="text-white font-body tracking-body mb-6 max-w-2xl mx-auto">
               Get exclusive insights from the European trail running scene delivered to your inbox every week.
             </p>
             <a 
@@ -160,7 +160,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-border py-6">
           <div className="text-center">
-            <p className="text-muted-foreground text-sm font-subtext tracking-subtext">
+            <p className="text-white text-sm font-subtext tracking-subtext">
               © 2025 Harrier Trail Running. All rights reserved.
             </p>
           </div>
