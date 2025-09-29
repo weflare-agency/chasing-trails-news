@@ -123,7 +123,7 @@ const NewsletterHero = () => {
           />
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-main font-bold mb-6 leading-tight tracking-main uppercase">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-main font-bold mb-8 leading-tight tracking-main uppercase">
           SIGN UP TO OUR FREE<br />
           <span className="text-newsletter">
             CHASING TRAILS
@@ -131,28 +131,28 @@ const NewsletterHero = () => {
           NEWSLETTER
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed font-body tracking-body">
+        <p className="text-2xl md:text-3xl text-white/90 mb-16 max-w-4xl mx-auto leading-relaxed font-body tracking-body">
           Get weekly insights into the trail running world with race reports,
           news from the professional scene, and on-the-ground perspectives from
           the French Pyrenees and beyond.
         </p>
 
         {/* Newsletter Signup Form */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-strong hover:shadow-newsletter transition-all duration-500 hover:scale-105 border-2 border-transparent hover:border-newsletter/20">
-          <h3 className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Get Free Access</h3>
-          <p className="text-muted-foreground mb-6 font-body tracking-body">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-10 max-w-3xl mx-auto shadow-strong hover:shadow-newsletter transition-all duration-500 hover:scale-105 border-2 border-transparent hover:border-newsletter/20">
+          <h3 className="text-3xl font-secondary font-bold text-foreground mb-4 tracking-secondary uppercase">Get Free Access</h3>
+          <p className="text-muted-foreground mb-8 font-body tracking-body text-lg">
             Drop your name and email below and we'll send the weekly newsletter straight to your inbox.
           </p>
           
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
                 <Input
                   type="text"
                   placeholder="Your name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="h-12 text-lg font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
+                  className="h-14 text-xl font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
                 />
                 <Input
                   type="email"
@@ -160,18 +160,18 @@ const NewsletterHero = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="h-12 text-lg font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
+                  className="h-14 text-xl font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter hover:border-primary/50"
                 />
             </div>
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-foreground mb-3 font-body">
+            <div className="mb-8">
+              <label className="block text-base font-medium text-foreground mb-4 font-body">
                 What's your experience level?
               </label>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-4">
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Beginner")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                  className={`p-4 text-base font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Beginner" 
                       ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
                       : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
@@ -182,7 +182,7 @@ const NewsletterHero = () => {
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Regular")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                  className={`p-4 text-base font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Regular" 
                       ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
                       : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
@@ -193,7 +193,7 @@ const NewsletterHero = () => {
                 <button
                   type="button"
                   onClick={() => setRunnerLevel("Ultra Veteran")}
-                  className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                  className={`p-4 text-base font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
                     runnerLevel === "Ultra Veteran" 
                       ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
                       : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
@@ -208,12 +208,12 @@ const NewsletterHero = () => {
               variant="newsletter" 
               size="xl"
               disabled={isSubmitting}
-              className="w-full font-main tracking-main uppercase"
+              className="w-full font-main tracking-main uppercase h-16 text-xl"
             >
               {isSubmitting ? "Signing you up..." : "Sign me up!"}
             </Button>
             
-            <p className="text-xs text-muted-foreground leading-relaxed mt-4 font-body tracking-body">
+            <p className="text-sm text-muted-foreground leading-relaxed mt-6 font-body tracking-body">
               By clicking "Sign me up!", you consent to receiving our free guide and occasional ultra running tips via email. 
               You can unsubscribe anytime. We respect your privacy - see our{" "}
               <a 
