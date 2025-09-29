@@ -56,12 +56,12 @@ const TrustSignals = () => {
           <h3 className="text-3xl font-secondary font-bold text-center text-foreground mb-12 tracking-secondary uppercase">
             Industry Recognition
           </h3>
-          <div className="relative max-w-2xl mx-auto">
+          <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 opacity-10 rounded-lg" style={{
             backgroundImage: 'var(--topo-pattern)'
           }} />
-            <div className="relative bg-card/50 backdrop-blur-sm p-8 rounded-xl border border-border">
-              <img src={awardsImage} alt="Industry Awards - Women's Running Awards 2023, Outdoors 100 Winner 24/25, Runner's World Highly Commended, The Guardian, Winner Running Show Awards Retailer of the Year 2024" className="w-full h-auto rounded-lg shadow-soft" />
+            <div className="relative bg-card/30 backdrop-blur-sm p-6 rounded-xl border border-border/50">
+              <img src={awardsImage} alt="Industry Awards - Women's Running Awards 2023, Outdoors 100 Winner 24/25, Runner's World Highly Commended, The Guardian, Winner Running Show Awards Retailer of the Year 2024" className="w-full max-w-3xl mx-auto h-auto rounded-lg shadow-soft" />
               <div className="mt-6 text-center">
                 <p className="text-lg font-secondary font-semibold text-foreground tracking-secondary uppercase mb-2">
                   Award-Winning Brand
