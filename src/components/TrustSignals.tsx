@@ -53,9 +53,7 @@ const TrustSignals = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-3xl font-secondary font-bold text-center text-foreground mb-12 tracking-secondary uppercase">
-            Industry Recognition
-          </h3>
+          
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 opacity-10 rounded-lg" style={{
             backgroundImage: 'var(--topo-pattern)'
