@@ -11,15 +11,19 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="space-y-6">
               <div className="flex flex-col items-center md:items-start">
-                <div className="bg-white rounded-full p-4 mb-4 shadow-lg">
+                <div className="flex items-center space-x-4 mb-6">
                   <img 
                     src={harrierBadge} 
                     alt="Harrier Trail Running Logo" 
-                    className="h-16 w-16 transition-transform duration-300 hover:scale-110"
+                    className="h-20 w-20 transition-transform duration-300 hover:scale-110"
                   />
+                  <div className="flex flex-col">
+                    <h2 className="text-white font-secondary font-bold text-2xl tracking-secondary uppercase">HARRIER</h2>
+                    <p className="text-newsletter font-secondary font-medium text-sm tracking-secondary uppercase">TRAIL RUNNING</p>
+                  </div>
                 </div>
               </div>
-              <p className="text-white leading-relaxed font-body tracking-body text-base max-w-sm">
+              <p className="text-white leading-relaxed font-body tracking-body text-lg max-w-sm">
                 THE UK'S FASTEST GROWING BRAND FOR TRAIL RUNNERS. MADE BY TRAIL RUNNERS, FOR TRAIL RUNNERS. OVER 50,000 ORDERS SHIPPED ACROSS THE UK AND BEYOND.
               </p>
             </div>
