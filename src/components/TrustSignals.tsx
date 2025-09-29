@@ -28,7 +28,7 @@ const TrustSignals = () => {
         {/* Stats */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">30,000+</div>
+            <div className="text-4xl md:text-5xl font-main font-bold text-primary mb-2 tracking-main group-hover:text-newsletter transition-colors duration-300">30,0+</div>
             <div className="text-lg font-secondary font-semibold text-foreground mb-1 tracking-secondary uppercase group-hover:text-white transition-colors duration-300">WEEKLY READERS</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Active readers worldwide</div>
           </div>
