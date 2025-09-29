@@ -6,38 +6,38 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-12 lg:py-16">
+        <div className="py-8 lg:py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative">
             {/* Brand Column */}
             <div className="space-y-6">
               <div className="flex flex-col items-center md:items-start">
-                <div className="flex items-center space-x-4 mb-6">
+                <div className="flex items-center space-x-3 mb-4">
                   <img 
                     src={harrierBadge} 
                     alt="Harrier Trail Running Logo" 
-                    className="h-20 w-20 transition-transform duration-300 hover:scale-110"
+                    className="h-12 w-12 transition-transform duration-300 hover:scale-110"
                   />
                   <div className="flex flex-col">
-                    <h2 className="text-white font-secondary font-bold text-2xl tracking-secondary uppercase">HARRIER</h2>
-                    <p className="text-newsletter font-secondary font-medium text-sm tracking-secondary uppercase">TRAIL RUNNING</p>
+                    <h2 className="text-white font-secondary font-bold text-lg tracking-secondary uppercase">HARRIER</h2>
+                    <p className="text-newsletter font-secondary font-medium text-xs tracking-secondary uppercase">TRAIL RUNNING</p>
                   </div>
                 </div>
               </div>
-              <p className="text-white leading-relaxed font-body tracking-body text-lg max-w-sm">
+              <p className="text-white leading-relaxed font-body tracking-body text-sm max-w-sm">
                 THE UK'S FASTEST GROWING BRAND FOR TRAIL RUNNERS. MADE BY TRAIL RUNNERS, FOR TRAIL RUNNERS. OVER 50,000 ORDERS SHIPPED ACROSS THE UK AND BEYOND.
               </p>
             </div>
 
             {/* Quick Links Column */}
             <div>
-              <h4 className="text-newsletter font-secondary font-bold mb-6 tracking-secondary text-base uppercase">Quick Links</h4>
+              <h4 className="text-newsletter font-secondary font-bold mb-4 tracking-secondary text-sm uppercase">Quick Links</h4>
               <ul className="space-y-4">
                 <li>
                   <a 
                     href="https://harrierrunfree.co.uk" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Main Website
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -48,7 +48,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/collections/trail-gear" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Shop Trail Gear
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -59,7 +59,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/training-plans" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Training Plans
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -70,7 +70,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/race-calendar" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Race Calendar
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -81,14 +81,14 @@ const Footer = () => {
 
             {/* Legal Column */}
             <div>
-              <h4 className="text-newsletter font-secondary font-bold mb-6 tracking-secondary text-base uppercase">Legal</h4>
+              <h4 className="text-newsletter font-secondary font-bold mb-4 tracking-secondary text-sm uppercase">Legal</h4>
               <ul className="space-y-4">
                 <li>
                   <a 
                     href="https://harrierrunfree.co.uk/pages/privacy-notice" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Privacy Policy
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -99,7 +99,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/website-terms-of-use" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Terms of Service
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -110,7 +110,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/cookie-policy" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     Cookie Policy
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -121,7 +121,7 @@ const Footer = () => {
                     href="https://harrierrunfree.co.uk/pages/gdpr-compliance" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-white hover:text-newsletter text-base font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center gap-2 group"
                   >
                     GDPR Compliance
                     <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -191,7 +191,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-border py-8 mt-8">
           <div className="text-center">
-            <p className="text-white text-base font-body tracking-body">
+            <p className="text-white text-sm font-body tracking-body">
               © 2025 harrier trail running. all rights reserved. made by trail runners, for trail runners.
             </p>
           </div>
