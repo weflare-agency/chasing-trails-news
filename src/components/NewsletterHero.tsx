@@ -105,9 +105,6 @@ const NewsletterHero = () => {
       />
       
       {/* Floating badge logos for premium brand feel */}
-      <div className="absolute top-20 right-20 opacity-20 animate-pulse hidden lg:block hover:opacity-30 transition-opacity duration-500">
-        <img src={harrierBadge} alt="" className="w-24 h-24 hover:scale-110 transition-transform duration-500" />
-      </div>
       <div className="absolute bottom-20 left-20 opacity-15 animate-pulse hidden lg:block hover:opacity-25 transition-opacity duration-500">
         <img src={harrierBadge} alt="" className="w-32 h-32 transform rotate-12 hover:scale-110 hover:rotate-6 transition-all duration-500" />
       </div>
