@@ -92,7 +92,7 @@ const TrustSignals = () => {
             <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-newsletter/40 hover:bg-newsletter/5 transition-all duration-300 hover:scale-105 group">
               <Calendar className="w-8 h-8 text-newsletter mb-3 group-hover:scale-110 transition-transform duration-300" />
               <h4 className="font-secondary font-semibold text-foreground mb-2 tracking-secondary uppercase">Weekly Delivery</h4>
-              <p className="text-sm text-muted-foreground font-subtext tracking-subtext">Every Thursday</p>
+              <p className="text-sm text-muted-foreground font-subtext tracking-subtext">Every Wednesday</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 hover:scale-105 group">

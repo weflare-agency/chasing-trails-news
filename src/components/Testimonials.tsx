@@ -70,7 +70,7 @@ const Testimonials = () => {
               Ready to Join the Community?
             </h3>
             <p className="text-xl text-foreground/80 mb-8 font-body tracking-body">
-              Get your weekly dose of trail running insights delivered every Thursday
+              Get your weekly dose of trail running insights delivered every Wednesday
             </p>
             <Button variant="newsletter" size="xl" className="text-xl font-main tracking-main uppercase hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-newsletter/40">
               Sign me up!
