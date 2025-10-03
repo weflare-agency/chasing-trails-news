@@ -105,20 +105,20 @@ const TrustSignals = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
             <Clock className="w-12 h-12 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">5-Min Read</div>
+            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">5-Minutes Read</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Quick, digestible format</div>
-          </div>
-
-          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
-            <Users className="w-12 h-12 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Athlete Features</div>
-            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Interviews with elite & everyday runners</div>
           </div>
 
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
             <FileText className="w-12 h-12 text-newsletter mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Quick Reference</div>
             <div className="text-sm text-muted-foreground font-subtext tracking-subtext">All the trail news in one place</div>
+          </div>
+
+          <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
+            <Users className="w-12 h-12 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Athlete Features</div>
+            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Interviews with elite & everyday runners</div>
           </div>
 
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
