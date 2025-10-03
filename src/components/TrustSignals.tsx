@@ -65,7 +65,7 @@ const TrustSignals = () => {
                   Award-Winning Brand
                 </p>
                 <p className="text-muted-foreground font-body tracking-body">
-                  Recognized for excellence in the trail running industry
+                  Recognised for excellence in the trail running industry
                 </p>
               </div>
             </div>
