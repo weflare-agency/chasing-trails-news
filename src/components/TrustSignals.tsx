@@ -110,9 +110,9 @@ const TrustSignals = () => {
           </div>
 
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
-            <Sparkles className="w-12 h-12 text-secondary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Curated Content</div>
-            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Best stories from the week</div>
+            <Users className="w-12 h-12 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Athlete Features</div>
+            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Interviews with elite & everyday runners</div>
           </div>
 
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
@@ -122,9 +122,9 @@ const TrustSignals = () => {
           </div>
 
           <div className="text-center p-6 rounded-xl hover:bg-white/5 transition-all duration-300 hover:scale-105 group">
-            <Users className="w-12 h-12 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Athlete Features</div>
-            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Interviews with elite & everyday runners</div>
+            <Sparkles className="w-12 h-12 text-secondary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <div className="text-2xl font-secondary font-bold text-foreground mb-2 tracking-secondary uppercase">Curated Content</div>
+            <div className="text-sm text-muted-foreground font-subtext tracking-subtext">Best stories from the week</div>
           </div>
         </div>
 
