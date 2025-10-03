@@ -143,7 +143,7 @@ const TrustSignals = () => {
               Get your weekly dose of trail running insights delivered every Wednesday
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form id="newsletter-signup-form" onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <Input
                   type="text"
@@ -277,6 +277,19 @@ const TrustSignals = () => {
                 </p>
               </div>
             </div>
+          </div>
+          
+          {/* Sign Up CTA Button */}
+          <div className="mt-8 text-center">
+            <button
+              onClick={() => {
+                const form = document.getElementById('newsletter-signup-form');
+                form?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }}
+              className="bg-newsletter hover:bg-newsletter/90 text-white font-secondary font-semibold px-8 py-3 rounded-lg tracking-secondary uppercase transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-newsletter/30"
+            >
+              Sign Up
+            </button>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://harrierrunfree.co.uk/pages/training-plans" 
+                    href="https://htrau.harrierrunfree.co.uk/"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-white hover:text-newsletter text-sm font-body tracking-body transition-colors duration-300 flex items-center justify-center gap-2 group"
