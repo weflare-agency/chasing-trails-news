@@ -9,9 +9,10 @@ import topoPattern2 from "@/assets/topo-pattern-2.png";
 const TrustSignals = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [runnerLevel, setRunnerLevel] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleEmailSubmit = async (email: string, firstName: string) => {
+  const handleEmailSubmit = async (email: string, firstName: string, runnerLevel?: string) => {
     try {
       console.log("Submitting to Klaviyo:", { email, firstName, timestamp: new Date() });
 
@@ -31,6 +32,9 @@ const TrustSignals = () => {
       formData.append('g', 'XjWFFg'); // EXACT List ID - DO NOT CHANGE
       formData.append('email', email.toLowerCase().trim());
       formData.append('first_name', firstName.trim());
+      if (runnerLevel) {
+        formData.append('properties[runner_level]', runnerLevel);
+      }
       formData.append('properties[subscription_source]', 'trust_signals_section');
 
       // Try the request with better error handling
@@ -72,10 +76,11 @@ const TrustSignals = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await handleEmailSubmit(email, name);
+    await handleEmailSubmit(email, name, runnerLevel);
 
     setEmail("");
     setName("");
+    setRunnerLevel("");
     setIsSubmitting(false);
   };
 
@@ -156,6 +161,47 @@ const TrustSignals = () => {
                   required
                   className="h-12 text-lg font-body transition-all duration-300 focus:ring-newsletter focus:border-newsletter"
                 />
+              </div>
+              
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-foreground mb-3 font-body">
+                  What's your experience level?
+                </label>
+                <div className="grid grid-cols-3 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setRunnerLevel("Beginner")}
+                    className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                      runnerLevel === "Beginner" 
+                        ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                        : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
+                    }`}
+                  >
+                    Beginner
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setRunnerLevel("Regular")}
+                    className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                      runnerLevel === "Regular" 
+                        ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                        : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
+                    }`}
+                  >
+                    Regular
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setRunnerLevel("Ultra Veteran")}
+                    className={`p-3 text-sm font-medium border-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                      runnerLevel === "Ultra Veteran" 
+                        ? "border-newsletter bg-newsletter/20 text-newsletter shadow-lg shadow-newsletter/30" 
+                        : "border-muted hover:border-newsletter text-foreground bg-background hover:bg-newsletter/5"
+                    }`}
+                  >
+                    Ultra Veteran
+                  </button>
+                </div>
               </div>
               <Button 
                 type="submit" 
