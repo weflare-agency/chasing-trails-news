@@ -8,7 +8,6 @@ import harrierBadge from "@/assets/harrier-badge-logo.png";
 import topoPattern1 from "@/assets/topo-pattern-1.png";
 
 import AboutAlecsa from "@/components/AboutAlecsa";
-import Testimonials from "@/components/Testimonials";
 import TrustSignals from "@/components/TrustSignals";
 import Footer from "@/components/Footer";
 
@@ -242,7 +241,6 @@ const SecondPage = () => {
       <main>
         <SecondPageHero />
         <AboutAlecsa />
-        <Testimonials />
         <TrustSignals />
       </main>
       <Footer />

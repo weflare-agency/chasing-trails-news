@@ -1,5 +1,5 @@
 import { FileText, MapPin, Users } from "lucide-react";
-import alecsaImage from "@/assets/alecsa-stewart.png";
+import alecsaImage from "@/assets/alecsa-new.jpg";
 import topoPattern1 from "@/assets/topo-pattern-1.png";
 
 const AboutAlecsa = () => {
